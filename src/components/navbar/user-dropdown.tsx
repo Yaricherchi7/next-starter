@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { Session } from 'next-auth';
-import { signOut } from 'next-auth/react';
+import Image from "next/image";
+import { Session } from "next-auth";
+import { signOut } from "next-auth/react";
 
-import { Icons } from '@/components/icons';
+import { Icons } from "@/components/icons";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
+  DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu";
 
 export const UserDropdown = ({ session }: { session: Session }) => {
   return (

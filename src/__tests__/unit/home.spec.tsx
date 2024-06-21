@@ -1,13 +1,13 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from "@testing-library/react";
 
-import Home from '@/app/page';
+import Home from "@/app/page";
 
-describe('Homepage', () => {
-  it('renders the Components', () => {
+describe("Homepage", () => {
+  it("renders the Components", () => {
     render(<Home />);
 
-    const heading = screen.getByText('Next.js starter template', {
-      selector: 'h1',
+    const heading = screen.getByText("Next.js starter template", {
+      selector: "h1"
     });
 
     expect(heading).toBeInTheDocument();
